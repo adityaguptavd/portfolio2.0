@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Render content on profile image load
+    function hideLoader() {
+        document.querySelector('.loader').style.display = 'none';
+    }
+
+    const profileImg = document.querySelector('.profile-img');
+    if(profileImg.complete) {
+        hideLoader();
+    }
+
+    else{
+        profileImg.addEventListener('load', hideLoader);
+    }
+
     // Add copyright year to footer
     document.querySelector('.copyright .year').textContent = new Date().getFullYear();
 

@@ -101,6 +101,19 @@ header .menuToggle{ display: none; }
 .copyright{ position: relative; color: #aaa; font-size: 1.1em; }
 .copyright .year{ color: var(--theme-color); }
 
+/* Loader */
+.loader{ position: fixed; inset: 0; z-index: 5; background-color: #efefef; }
+.loader .circle{ width: 25px; aspect-ratio: 1/1; border: 2px solid var(--theme-color); border-radius: 50%; opacity: 0; visibility: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: animate 1s linear infinite; }
+.loader .circle:nth-child(1){ animation-delay: 0s; }
+.loader .circle:nth-child(2){ animation-delay: 0.5s; }
+.loader .circle:nth-child(3){ animation-delay: 1s; }
+
+@keyframes animate {
+    0%{ width: 15px; opacity: 0; visibility: hidden; }
+    50%{ opacity: 1; visibility: visible; }
+    100%{ width: 75px; opacity: 0; visibility: hidden; }
+}
+
 
 /* Media Query */
 @media screen and (max-width: 980px) {
