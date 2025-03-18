@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 *, ::before, ::after{ margin: 0; box-sizing: border-box; }
 button{ padding: 0; cursor: pointer; }
 img{ vertical-align: bottom; }
@@ -8,7 +6,7 @@ a{ text-decoration: none; color: inherit; display: inline-block; }
 
 :root{ --theme-color: #30fe6c; --bg-dark: #222; --bg-dark-secondary: #34353a; --bg-dark-ternary: #2e2f34; }
 
-html{ font-size: 15px; font-family: 'Open Sans', sans-serif; color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: 20px; }
+html{ font-size: 15px; font-family: 'Open Sans', sans-serif; font-display: swap; color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: 20px; }
 body{ font-size: 16px; }
 
 /* Container and 12-grid layout */
